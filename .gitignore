@@ -1,0 +1,20 @@
+# Rust
+/target/
+
+# Godot generated files
+.godot/
+export.cfg
+export_presets.cfg
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp

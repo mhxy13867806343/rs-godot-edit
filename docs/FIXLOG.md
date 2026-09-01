@@ -14,6 +14,13 @@
 - **修复：** 每编译一个脚本就立刻收 Logger，把空路径 / `gdscript://` / 非 `res://` 映射回当前文件。没有为 `@export` 或任何具体英文错误加启发式分支。
 - **验证：** `cargo test` 12 通过，`cargo check` 通过。原始引擎输出见 `docs/headless_engine_errors.json`。
 
+## 2026-09-01 第二轮（收尾，约 10:22）
+
+- **卡住：** 本想继续查 Godot 4.6 源码/网页文档扩 API，网络请求挂起约 80 分钟，没有产出。没有再生成新的成批 fixtures。
+- **已有成果（上一轮已入库）：** `fixtures/generated/` 26 个坏脚本 + `static_check_sample.gd`；headless dump 已证明引擎会报悬空 `@export` 原文；Logger 路径映射已提交 `0b81b3d`。
+- **本轮最小修复：** 脚本编辑器整棵控件树（含父级、Tree、RichTextLabel 原文）里的引擎报错行原样进右上角面板；对不上固定格式的行只要带有引擎错误字样，也按原文显示。没有为 `@export` 或任何具体错误加 case。
+- **验证：** `cargo test` 12 通过，`cargo check` 通过。无界面 dump 再跑一遍：`RS_GODOT_EDIT_HEADLESS_CASES=28`，含 `static_check_sample.gd` 的 `@export` 引擎原文。未开 Godot GUI。
+
 ## 如何复跑
 
 ```bash

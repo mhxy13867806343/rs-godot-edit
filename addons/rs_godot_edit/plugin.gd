@@ -151,6 +151,7 @@ func _collect_script_editor_diagnostics() -> Array:
 			editors = [current]
 			scripts = [script_editor.get_current_script()]
 	var result: Array = []
+	var fallback_path := "res://"
 	for i in editors.size():
 		var editor: Node = editors[i]
 		var path := "res://"
@@ -158,8 +159,12 @@ func _collect_script_editor_diagnostics() -> Array:
 			path = str(scripts[i].resource_path)
 			if path.is_empty():
 				path = "res://[unsaved].gd"
+		if fallback_path == "res://" and path != "res://":
+			fallback_path = path
 		result.append_array(_collect_from_editor_api(editor, path))
 		result.append_array(_collect_engine_texts_from_control(editor, path))
+	result.append_array(_collect_from_editor_api(script_editor, fallback_path))
+	result.append_array(_collect_engine_texts_from_control(script_editor, fallback_path))
 	return result
 
 func _collect_from_editor_api(editor: Object, path: String) -> Array:
@@ -230,7 +235,9 @@ func _walk_controls_for_engine_errors(node: Node, script_path: String, found: Ar
 		return
 	var texts: PackedStringArray = PackedStringArray()
 	if node is RichTextLabel:
-		texts.append((node as RichTextLabel).get_parsed_text())
+		var rich := node as RichTextLabel
+		texts.append(rich.get_parsed_text())
+		texts.append(rich.get_text())
 	elif node is Label:
 		texts.append((node as Label).text)
 	elif node is LinkButton:
@@ -242,6 +249,8 @@ func _walk_controls_for_engine_errors(node: Node, script_path: String, found: Ar
 		var list := node as ItemList
 		for i in list.item_count:
 			texts.append(list.get_item_text(i))
+	elif node is Tree:
+		_collect_tree_texts(node as Tree, texts)
 	for text in texts:
 		for line in text.split("\n"):
 			var parsed := _parse_engine_error_line(line.strip_edges(), script_path)
@@ -250,21 +259,34 @@ func _walk_controls_for_engine_errors(node: Node, script_path: String, found: Ar
 	for child in node.get_children():
 		_walk_controls_for_engine_errors(child, script_path, found, depth + 1)
 
+func _collect_tree_texts(tree: Tree, texts: PackedStringArray) -> void:
+	if tree == null:
+		return
+	var item := tree.get_root()
+	while item:
+		for column in tree.columns:
+			texts.append(item.get_text(column))
+			texts.append(item.get_tooltip_text(column))
+		item = item.get_next_in_tree()
+
 func _parse_engine_error_line(line: String, script_path: String) -> Dictionary:
 	if line.is_empty() or engine_error_line.get_pattern().is_empty():
 		return {}
 	var matched := engine_error_line.search(line)
-	if matched == null:
-		return {}
-	var kind := matched.get_string(1)
-	var severity := "warning" if kind.to_lower().contains("warn") or kind.contains("警告") else "error"
-	var line_no := int(matched.get_string(2))
-	var column_text := matched.get_string(3)
-	var column := int(column_text) if not column_text.is_empty() else 1
-	var message := matched.get_string(4).strip_edges()
-	if message.is_empty():
-		return {}
-	return _diag(script_path, maxi(line_no, 1), maxi(column, 1), severity, "GODOT_EDITOR", message, "godot")
+	if matched:
+		var kind := matched.get_string(1)
+		var severity := "warning" if kind.to_lower().contains("warn") or kind.contains("警告") else "error"
+		var line_no := int(matched.get_string(2))
+		var column_text := matched.get_string(3)
+		var column := int(column_text) if not column_text.is_empty() else 1
+		var message := matched.get_string(4).strip_edges()
+		if not message.is_empty():
+			return _diag(script_path, maxi(line_no, 1), maxi(column, 1), severity, "GODOT_EDITOR", message, "godot")
+	var lowered := line.to_lower()
+	var looks_like_engine := lowered.contains("parse error") or lowered.contains("script error") or line.contains("错误") or line.contains("警告") or lowered.begins_with("error") or lowered.begins_with("warning")
+	if looks_like_engine:
+		return _diag(script_path, 1, 1, "warning" if lowered.contains("warn") or line.contains("警告") else "error", "GODOT_EDITOR", line, "godot")
+	return {}
 
 func _engine_error_signature() -> String:
 	var parts: PackedStringArray = PackedStringArray()

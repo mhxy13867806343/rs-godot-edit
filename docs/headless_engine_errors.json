@@ -1,5 +1,5 @@
 {
-	"case_count": 57,
+	"case_count": 62,
 	"cases": [
 		{
 			"engine_logs": [
@@ -31,6 +31,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/duplicate_var.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/duplicate_class_name.gd",
+					"line": 3,
+					"message": "Parse Error: \"class_name\" can only be used once.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/duplicate_class_name.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -82,6 +99,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/keyword_as_identifier.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/property_incomplete_getter.gd",
+					"line": 4,
+					"message": "Parse Error: Expected \":\" or \"(\" after \"get\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/property_incomplete_getter.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -278,6 +312,32 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/typed_dict_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot include a value of type \"String\" as \"int\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/typed_dict_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot have a value of type \"String\" in a dictionary of type \"Dictionary[String, int]\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/typed_dict_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/annotation_unknown.gd",
 					"line": 3,
 					"message": "Parse Error: Unrecognized annotation: \"@not_a_real_annotation\".",
@@ -346,6 +406,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/broken_match.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/inner_class_no_body.gd",
+					"line": 3,
+					"message": "Parse Error: Expected \":\" after class declaration.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/inner_class_no_body.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -465,6 +542,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/invalid_enum.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/const_reassign.gd",
+					"line": 6,
+					"message": "Parse Error: Cannot assign a new value to a constant.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/const_reassign.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1009,7 +1103,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-01 23:50:26",
+	"generated_at": "2026-09-02 07:36:42",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1021,6 +1115,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 61,
-	"with_engine_logs": 57
+	"panel_item_count": 67,
+	"with_engine_logs": 62
 }

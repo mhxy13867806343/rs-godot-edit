@@ -30,6 +30,13 @@
 - **验证：** `cargo test` 12 通过，`cargo check` 通过。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。原始输出 `docs/headless_engine_errors.json`，API 探测 `docs/engine_error_api.json`。
 - **缺口：** 无 GUI 时拿不到列号（Logger 无 column）；脚本编辑器控件树那条路仍需编辑器会话才能测。
 
+## 2026-09-02 第四轮（无界面，约 07:35）
+
+- **Godot：** 4.6.stable，`--headless` 单次 dump，约 2 秒结束。无 Godot 僵尸进程。
+- **用例：** 只新增 5 个坏脚本（重复 `class_name`、残缺 getter、const 再赋值、typed Dictionary 错类型、内部 class 无冒号）。现 **62/62** 都有官方 Parse Error 原文，67 条 Logger。路径仍从 `gdscript://` 映回 `res://`。没有为具体错误加 if/启发式。
+- **列号：** 引擎 Logger 给出行号；`Logger._log_error` 没有 column，记录恒为 1。脚本语言 API 仍无 get_error 列表。控件树 GUI 本轮跳过。
+- **验证：** `cargo test` 12 通过。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。原始输出 `docs/headless_engine_errors.json`。
+
 ## 如何复跑
 
 ```bash

@@ -1,0 +1,3 @@
+extends Node
+class_name RsGodotEditDupClassA
+class_name RsGodotEditDupClassB

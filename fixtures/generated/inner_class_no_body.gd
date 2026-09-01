@@ -1,0 +1,3 @@
+extends Node
+
+class Inner

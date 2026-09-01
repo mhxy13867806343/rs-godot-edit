@@ -1,0 +1,10 @@
+[package]
+name = "rs-godot-edit"
+version = "0.1.0"
+edition = "2021"
+description = "Static diagnostics for GDScript projects"
+license = "MIT"
+
+[[bin]]
+name = "rs-godot-edit"
+path = "src/main.rs"

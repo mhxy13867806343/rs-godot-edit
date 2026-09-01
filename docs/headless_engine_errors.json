@@ -1,0 +1,464 @@
+{
+	"case_count": 28,
+	"cases": [
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/func_missing_paren.gd",
+					"line": 3,
+					"message": "Parse Error: Expected opening \"(\" after function name.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/func_missing_paren.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/syntax_missing_colon.gd",
+					"line": 4,
+					"message": "Parse Error: Unexpected \"Indent\" in class body.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/syntax_missing_colon.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/empty_func_body.gd",
+					"line": 3,
+					"message": "Parse Error: Expected indented block after function declaration.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/empty_func_body.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/invalid_super.gd",
+					"line": 4,
+					"message": "Parse Error: Function \"definitely_not_a_method()\" not found in base Node.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/invalid_super.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/duplicate_extends.gd",
+					"line": 2,
+					"message": "Parse Error: \"extends\" can only be used once.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/duplicate_extends.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/bad_signal.gd",
+					"line": 3,
+					"message": "Parse Error: Expected signal name after \"signal\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/bad_signal.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/syntax_unclosed_paren.gd",
+					"line": 4,
+					"message": "Parse Error: Expected closing \")\" after call arguments.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/syntax_unclosed_paren.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/trailing_operator.gd",
+					"line": 4,
+					"message": "Parse Error: Expected expression after \"+\" operator.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/trailing_operator.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/annotation_unknown.gd",
+					"line": 3,
+					"message": "Parse Error: Unrecognized annotation: \"@not_a_real_annotation\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/annotation_unknown.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/broken_match.gd",
+					"line": 4,
+					"message": "Parse Error: Expected \":\" after \"match\" expression.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/broken_match.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/cycle_a.gd",
+					"line": 1,
+					"message": "Parse Error: Could not resolve super class inheritance from \"res://fixtures/generated/cycle_b.gd\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/cycle_a.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/syntax_unclosed_bracket.gd",
+					"line": 4,
+					"message": "Parse Error: Expected closing \"]\" after array elements.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/syntax_unclosed_bracket.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/invalid_enum.gd",
+					"line": 3,
+					"message": "Parse Error: Expected identifier for enum key.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/invalid_enum.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/syntax_unclosed_string.gd",
+					"line": 4,
+					"message": "Parse Error: Unterminated string.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/syntax_unclosed_string.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/unterminated_array.gd",
+					"line": 6,
+					"message": "Parse Error: Expected expression as array element.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/unterminated_array.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/incomplete_if.gd",
+					"line": 4,
+					"message": "Parse Error: Expected conditional expression after \"if\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/incomplete_if.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/cycle_b.gd",
+					"line": 1,
+					"message": "Parse Error: Could not resolve class \"res://fixtures/generated/cycle_a.gd\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/cycle_b.gd",
+					"line": 1,
+					"message": "Parse Error: Could not resolve class \"res://fixtures/generated/cycle_a.gd\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/cycle_b.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/class_name_invalid.gd",
+					"line": 2,
+					"message": "Parse Error: Expected identifier for the global class name after \"class_name\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/class_name_invalid.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/type_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"int\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/type_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type String to variable \"count\" with specified type int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/type_mismatch.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/indent_mixed.gd",
+					"line": 5,
+					"message": "Parse Error: Expected statement, found \"Indent\" instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/indent_mixed.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/annotation_onready_orphan.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@onready\" cannot be applied to a function.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/annotation_onready_orphan.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/static_incomplete.gd",
+					"line": 4,
+					"message": "Parse Error: Expected statement, found \"static\" instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/static_incomplete.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/invalid_rpc_on_var.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@rpc\" cannot be applied to a variable.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/invalid_rpc_on_var.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/bad_preload.gd",
+					"line": 3,
+					"message": "Parse Error: Preload file \"res://this_file_does_not_exist_rs_godot_edit.gd\" does not exist.",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/bad_preload.gd",
+					"line": 3,
+					"message": "Parse Error: Cannot infer the type of \"Missing\" constant because the value doesn't have a set type.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/bad_preload.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/annotation_export_orphan.gd",
+					"line": 7,
+					"message": "Parse Error: Annotation \"@export\" does not precede a valid target, so it will have no effect.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/annotation_export_orphan.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/unknown_identifier.gd",
+					"line": 4,
+					"message": "Parse Error: Identifier \"nope\" not declared in the current scope.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/unknown_identifier.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://fixtures/generated/abstract_on_var.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@abstract\" cannot be applied to a variable.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/abstract_on_var.gd",
+			"reload_error": 43
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_HEADLESS",
+					"column": 1,
+					"file": "res://static_check_sample.gd",
+					"line": 11,
+					"message": "Parse Error: Annotation \"@export\" does not precede a valid target, so it will have no effect.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://static_check_sample.gd",
+			"reload_error": 43
+		}
+	],
+	"generated_at": "2026-09-01 08:45:11",
+	"godot_version": {
+		"build": "official",
+		"hash": "89cea143987d564363e15d207438530651d943ac",
+		"hex": 263680,
+		"major": 4,
+		"minor": 6,
+		"patch": 0,
+		"status": "stable",
+		"string": "4.6-stable (official)",
+		"timestamp": 0
+	}
+}

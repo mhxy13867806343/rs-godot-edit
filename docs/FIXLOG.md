@@ -20,6 +20,7 @@
 - **已有成果（上一轮已入库）：** `fixtures/generated/` 26 个坏脚本 + `static_check_sample.gd`；headless dump 已证明引擎会报悬空 `@export` 原文；Logger 路径映射已提交 `0b81b3d`。
 - **本轮最小修复：** 脚本编辑器整棵控件树（含父级、Tree、RichTextLabel 原文）里的引擎报错行原样进右上角面板；对不上固定格式的行只要带有引擎错误字样，也按原文显示。没有为 `@export` 或任何具体错误加 case。
 - **验证：** `cargo test` 12 通过，`cargo check` 通过。无界面 dump 再跑一遍：`RS_GODOT_EDIT_HEADLESS_CASES=28`，含 `static_check_sample.gd` 的 `@export` 引擎原文。未开 Godot GUI。
+- **再次卡住：** GitHub 推送 SSL 失败后等待确认超时；本轮已停掉长任务，只补这一行说明。
 
 ## 如何复跑
 

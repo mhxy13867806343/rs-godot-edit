@@ -171,13 +171,13 @@ func _collect_from_editor_api(editor: Object, path: String) -> Array:
 	var result: Array = []
 	if editor == null:
 		return result
-	for method_name in ["get_errors", "get_script_errors", "get_error_list", "get_diagnostics"]:
+	for method_name in ["get_errors", "get_script_errors", "get_error_list", "get_diagnostics", "get_parse_errors", "get_error", "debug_get_error"]:
 		if editor.has_method(method_name):
 			result.append_array(_diagnostics_from_unknown_payload(editor.call(method_name), path))
 	if editor.has_method("get_base_editor"):
 		var code_edit: Variant = editor.get_base_editor()
 		if code_edit is Object:
-			for method_name in ["get_errors", "get_error_messages", "get_diagnostics"]:
+			for method_name in ["get_errors", "get_error_messages", "get_diagnostics", "get_parse_errors", "get_error", "debug_get_error"]:
 				if code_edit.has_method(method_name):
 					result.append_array(_diagnostics_from_unknown_payload(code_edit.call(method_name), path))
 	return result
@@ -327,6 +327,18 @@ func _validate_one_script(path: String, source: String) -> Array:
 			result.append(diagnostic)
 	if result.is_empty():
 		result.append_array(fallbacks)
+	result.append_array(_collect_script_language_diagnostics(path))
+	return result
+
+func _collect_script_language_diagnostics(path: String) -> Array:
+	var result: Array = []
+	for index in Engine.get_script_language_count():
+		var language := Engine.get_script_language(index)
+		if language == null:
+			continue
+		for method_name in ["debug_get_error", "get_error", "get_errors", "get_parse_errors", "get_error_list", "get_diagnostics"]:
+			if language.has_method(method_name):
+				result.append_array(_diagnostics_from_unknown_payload(language.call(method_name), path))
 	return result
 
 func _remap_engine_file(file: String, fallback_path: String) -> String:

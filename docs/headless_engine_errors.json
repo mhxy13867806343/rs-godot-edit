@@ -1,10 +1,44 @@
 {
-	"case_count": 28,
+	"case_count": 57,
 	"cases": [
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/onready_on_const.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@onready\" cannot be applied to a constant.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/onready_on_const.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/duplicate_var.gd",
+					"line": 5,
+					"message": "Parse Error: There is already a variable named \"a\" declared in this scope.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/duplicate_var.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/func_missing_paren.gd",
 					"line": 3,
@@ -14,12 +48,48 @@
 				}
 			],
 			"file": "res://fixtures/generated/func_missing_paren.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/preload_empty.gd",
+					"line": 3,
+					"message": "Parse Error: Expected resource path after \"(\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/preload_empty.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/keyword_as_identifier.gd",
+					"line": 3,
+					"message": "Parse Error: Expected variable name after \"var\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/keyword_as_identifier.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/syntax_missing_colon.gd",
 					"line": 4,
@@ -29,12 +99,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/syntax_missing_colon.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/empty_func_body.gd",
 					"line": 3,
@@ -44,12 +116,31 @@
 				}
 			],
 			"file": "res://fixtures/generated/empty_func_body.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_on_func.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@export\" cannot be applied to a function.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_on_func.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/invalid_super.gd",
 					"line": 4,
@@ -59,12 +150,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/invalid_super.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/duplicate_extends.gd",
 					"line": 2,
@@ -74,12 +167,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/duplicate_extends.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/bad_signal.gd",
 					"line": 3,
@@ -89,12 +184,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/bad_signal.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/syntax_unclosed_paren.gd",
 					"line": 4,
@@ -104,12 +201,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/syntax_unclosed_paren.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/trailing_operator.gd",
 					"line": 4,
@@ -119,12 +218,65 @@
 				}
 			],
 			"file": "res://fixtures/generated/trailing_operator.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/return_in_class_body.gd",
+					"line": 3,
+					"message": "Parse Error: Unexpected \"return\" in class body.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/return_in_class_body.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/for_missing_in.gd",
+					"line": 4,
+					"message": "Parse Error: Expected \"in\" or \":\" after \"for\" variable name.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/for_missing_in.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/icon_missing_arg.gd",
+					"line": 1,
+					"message": "Parse Error: Annotation \"@icon\" requires at least 1 arguments, but 0 were given.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/icon_missing_arg.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/annotation_unknown.gd",
 					"line": 3,
@@ -134,12 +286,57 @@
 				}
 			],
 			"file": "res://fixtures/generated/annotation_unknown.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/unclosed_dict.gd",
+					"line": 5,
+					"message": "Parse Error: Expected closing \"}\" after dictionary elements.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/unclosed_dict.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/typed_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot include a value of type \"String\" as \"int\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/typed_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot have an element of type \"String\" in an array of type \"Array[int]\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/typed_array_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/broken_match.gd",
 					"line": 4,
@@ -149,12 +346,48 @@
 				}
 			],
 			"file": "res://fixtures/generated/broken_match.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/while_missing_cond.gd",
+					"line": 4,
+					"message": "Parse Error: Expected conditional expression after \"while\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/while_missing_cond.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/tool_not_first.gd",
+					"line": 2,
+					"message": "Parse Error: Annotation \"@tool\" must be at the top of the script, before \"extends\" and \"class_name\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/tool_not_first.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/cycle_a.gd",
 					"line": 1,
@@ -164,12 +397,31 @@
 				}
 			],
 			"file": "res://fixtures/generated/cycle_a.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/unknown_type_hint.gd",
+					"line": 3,
+					"message": "Parse Error: Could not find type \"NotARealType\" in the current scope.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/unknown_type_hint.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/syntax_unclosed_bracket.gd",
 					"line": 4,
@@ -179,12 +431,31 @@
 				}
 			],
 			"file": "res://fixtures/generated/syntax_unclosed_bracket.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/match_no_branches.gd",
+					"line": 4,
+					"message": "Parse Error: Expected \":\" after \"match\" expression.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/match_no_branches.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/invalid_enum.gd",
 					"line": 3,
@@ -194,12 +465,31 @@
 				}
 			],
 			"file": "res://fixtures/generated/invalid_enum.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/invalid_number.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot use a decimal point twice in a number.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/invalid_number.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/syntax_unclosed_string.gd",
 					"line": 4,
@@ -209,12 +499,48 @@
 				}
 			],
 			"file": "res://fixtures/generated/syntax_unclosed_string.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/signal_bad_syntax.gd",
+					"line": 3,
+					"message": "Parse Error: Expected end of statement after signal declaration, found \":\" instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/signal_bad_syntax.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/extends_after_statement.gd",
+					"line": 4,
+					"message": "Parse Error: Unexpected \"extends\" in class body.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/extends_after_statement.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/unterminated_array.gd",
 					"line": 6,
@@ -224,12 +550,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/unterminated_array.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/incomplete_if.gd",
 					"line": 4,
@@ -239,12 +567,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/incomplete_if.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/cycle_b.gd",
 					"line": 1,
@@ -253,7 +583,7 @@
 					"source": "godot"
 				},
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/cycle_b.gd",
 					"line": 1,
@@ -263,12 +593,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/cycle_b.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/class_name_invalid.gd",
 					"line": 2,
@@ -278,12 +610,65 @@
 				}
 			],
 			"file": "res://fixtures/generated/class_name_invalid.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/default_arg_before_required.gd",
+					"line": 3,
+					"message": "Parse Error: Cannot have mandatory parameters after optional parameters.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/default_arg_before_required.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/yield_removed.gd",
+					"line": 4,
+					"message": "Parse Error: \"yield\" was removed in Godot 4. Use \"await\" instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/yield_removed.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/invalid_lambda.gd",
+					"line": 4,
+					"message": "Parse Error: Expected opening \"(\" after \"func\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/invalid_lambda.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/type_mismatch.gd",
 					"line": 4,
@@ -292,7 +677,7 @@
 					"source": "godot"
 				},
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/type_mismatch.gd",
 					"line": 4,
@@ -302,12 +687,65 @@
 				}
 			],
 			"file": "res://fixtures/generated/type_mismatch.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/duplicate_func.gd",
+					"line": 6,
+					"message": "Parse Error: Function \"test\" has the same name as a previously declared function.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/duplicate_func.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/warning_ignore_empty.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@warning_ignore\" requires at least 1 arguments, but 0 were given.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/warning_ignore_empty.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/await_in_class_body.gd",
+					"line": 3,
+					"message": "Parse Error: Unexpected \"await\" in class body.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/await_in_class_body.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/indent_mixed.gd",
 					"line": 5,
@@ -317,12 +755,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/indent_mixed.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/annotation_onready_orphan.gd",
 					"line": 4,
@@ -332,12 +772,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/annotation_onready_orphan.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/static_incomplete.gd",
 					"line": 4,
@@ -347,12 +789,31 @@
 				}
 			],
 			"file": "res://fixtures/generated/static_incomplete.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/enum_duplicate.gd",
+					"line": 3,
+					"message": "Parse Error: Name \"A\" was already in this enum (at line 3).",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/enum_duplicate.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/invalid_rpc_on_var.gd",
 					"line": 4,
@@ -362,12 +823,48 @@
 				}
 			],
 			"file": "res://fixtures/generated/invalid_rpc_on_var.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/invalid_ternary.gd",
+					"line": 4,
+					"message": "Parse Error: Expected expression as ternary condition after \"if\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/invalid_ternary.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/break_outside_loop.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot use \"break\" outside of a loop.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/break_outside_loop.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/bad_preload.gd",
 					"line": 3,
@@ -376,7 +873,7 @@
 					"source": "godot"
 				},
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/bad_preload.gd",
 					"line": 3,
@@ -386,12 +883,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/bad_preload.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/annotation_export_orphan.gd",
 					"line": 7,
@@ -401,12 +900,65 @@
 				}
 			],
 			"file": "res://fixtures/generated/annotation_export_orphan.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/inferred_var_missing_value.gd",
+					"line": 4,
+					"message": "Parse Error: Expected expression for variable initial value after \"=\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/inferred_var_missing_value.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/const_missing_value.gd",
+					"line": 3,
+					"message": "Parse Error: Expected initializer after constant name.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/const_missing_value.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/continue_outside_loop.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot use \"continue\" outside of a loop.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/continue_outside_loop.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/unknown_identifier.gd",
 					"line": 4,
@@ -416,12 +968,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/unknown_identifier.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://fixtures/generated/abstract_on_var.gd",
 					"line": 4,
@@ -431,12 +985,14 @@
 				}
 			],
 			"file": "res://fixtures/generated/abstract_on_var.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		},
 		{
 			"engine_logs": [
 				{
-					"code": "GODOT_HEADLESS",
+					"code": "GODOT_SCRIPT",
 					"column": 1,
 					"file": "res://static_check_sample.gd",
 					"line": 11,
@@ -446,10 +1002,14 @@
 				}
 			],
 			"file": "res://static_check_sample.gd",
-			"reload_error": 43
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
 		}
 	],
-	"generated_at": "2026-09-01 10:23:59",
+	"empty_engine_logs": 0,
+	"empty_files": [],
+	"generated_at": "2026-09-01 23:50:26",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -460,5 +1020,7 @@
 		"status": "stable",
 		"string": "4.6-stable (official)",
 		"timestamp": 0
-	}
+	},
+	"panel_item_count": 61,
+	"with_engine_logs": 57
 }

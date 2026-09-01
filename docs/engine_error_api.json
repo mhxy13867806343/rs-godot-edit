@@ -1,0 +1,99 @@
+{
+	"classes": {
+		"CodeEdit": {
+			"exists": true,
+			"methods": [
+				"_get_accessibility_configuration_warnings",
+				"_get_configuration_warnings",
+				"_structured_text_parser",
+				"update_configuration_warnings"
+			]
+		},
+		"EditorInterface": {
+			"exists": true,
+			"methods": []
+		},
+		"GDScript": {
+			"exists": true,
+			"methods": []
+		},
+		"GDScriptSyntaxHighlighter": {
+			"exists": true,
+			"methods": []
+		},
+		"Logger": {
+			"exists": true,
+			"methods": [
+				"_log_error"
+			]
+		},
+		"Script": {
+			"exists": true,
+			"methods": []
+		},
+		"ScriptBacktrace": {
+			"exists": true,
+			"methods": []
+		},
+		"ScriptEditor": {
+			"exists": true,
+			"methods": [
+				"_get_accessibility_configuration_warnings",
+				"_get_configuration_warnings",
+				"_structured_text_parser",
+				"update_configuration_warnings"
+			]
+		},
+		"ScriptEditorBase": {
+			"exists": true,
+			"methods": [
+				"_get_accessibility_configuration_warnings",
+				"_get_configuration_warnings",
+				"_structured_text_parser",
+				"update_configuration_warnings"
+			]
+		},
+		"ScriptLanguage": {
+			"exists": true,
+			"methods": []
+		}
+	},
+	"extra_error_related_classes": [
+		{
+			"class": "GDScriptEditorTranslationParserPlugin",
+			"methods": [
+				"_parse_file"
+			]
+		},
+		{
+			"class": "GDScript",
+			"methods": []
+		},
+		{
+			"class": "GDScriptNativeClass",
+			"methods": []
+		},
+		{
+			"class": "GDScriptSyntaxHighlighter",
+			"methods": []
+		}
+	],
+	"godot_version": {
+		"build": "official",
+		"hash": "89cea143987d564363e15d207438530651d943ac",
+		"hex": 263680,
+		"major": 4,
+		"minor": 6,
+		"patch": 0,
+		"status": "stable",
+		"string": "4.6-stable (official)",
+		"timestamp": 0
+	},
+	"script_languages": [
+		{
+			"class": "ScriptLanguage",
+			"methods": [],
+			"name": "ScriptLanguage"
+		}
+	]
+}

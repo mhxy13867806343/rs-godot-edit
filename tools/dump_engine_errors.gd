@@ -1,60 +1,58 @@
 extends SceneTree
 
 const FIXTURE_ROOT := "res://fixtures"
-
-class CaptureLogger extends Logger:
-	var entries: Array = []
-
-	func _log_error(_function: String, file: String, line: int, code: String, rationale: String, _editor_notify: bool, error_type: int, _script_backtraces: Array[ScriptBacktrace]) -> void:
-		var message := rationale if not rationale.is_empty() else code
-		if message.is_empty():
-			message = "unknown engine error"
-		entries.append({
-			"file": file,
-			"line": line if line > 0 else 1,
-			"column": 1,
-			"message": message,
-			"severity": "warning" if error_type == ERROR_TYPE_WARNING else "error",
-			"code": "GODOT_HEADLESS",
-			"source": "godot",
-		})
-
-	func _log_message(message: String, error: bool) -> void:
-		if not error:
-			return
-		entries.append({
-			"file": "",
-			"line": 1,
-			"column": 1,
-			"message": message if not message.is_empty() else "unknown engine message",
-			"severity": "error",
-			"code": "GODOT_MESSAGE",
-			"source": "godot",
-		})
+const ERROR_API_HINTS := ["error", "diagnos", "warning", "logger", "parse"]
 
 func _initialize() -> void:
-	var logger := CaptureLogger.new()
+	var logger_script := load("res://addons/rs_godot_edit/editor_logger.gd")
+	if logger_script == null:
+		push_error("RS Godot Edit: missing editor_logger.gd")
+		quit()
+		return
+	var logger: Logger = logger_script.new()
 	OS.add_logger(logger)
+	var api_probe := _probe_error_apis()
 	var cases: Array = []
 	_scan(FIXTURE_ROOT, logger, cases)
 	if FileAccess.file_exists("res://static_check_sample.gd"):
 		_check_file("res://static_check_sample.gd", logger, cases)
+	var with_logs := 0
+	var empty_files: PackedStringArray = PackedStringArray()
+	var panel_items: Array = []
+	for item in cases:
+		if item.engine_logs.is_empty():
+			empty_files.append(str(item.file))
+		else:
+			with_logs += 1
+		panel_items.append_array(item.engine_logs)
 	var report := {
 		"godot_version": Engine.get_version_info(),
 		"generated_at": Time.get_datetime_string_from_system(false, true),
 		"case_count": cases.size(),
+		"with_engine_logs": with_logs,
+		"empty_engine_logs": empty_files.size(),
+		"empty_files": empty_files,
+		"panel_item_count": panel_items.size(),
 		"cases": cases,
 	}
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("res://docs"))
-	var json := JSON.stringify(report, "\t")
-	var out := FileAccess.open("res://docs/headless_engine_errors.json", FileAccess.WRITE)
-	if out:
-		out.store_string(json)
-		out.close()
+	_write_json("res://docs/headless_engine_errors.json", report)
+	_write_json("res://docs/engine_error_api.json", api_probe)
 	print("RS_GODOT_EDIT_HEADLESS_CASES=%d" % cases.size())
+	print("RS_GODOT_EDIT_HEADLESS_WITH_LOGS=%d" % with_logs)
+	print("RS_GODOT_EDIT_HEADLESS_EMPTY=%d" % empty_files.size())
+	print("RS_GODOT_EDIT_HEADLESS_PANEL_ITEMS=%d" % panel_items.size())
 	quit()
 
-func _scan(dir_path: String, logger: CaptureLogger, cases: Array) -> void:
+func _write_json(path: String, value: Variant) -> void:
+	var out := FileAccess.open(path, FileAccess.WRITE)
+	if out == null:
+		push_error("RS Godot Edit: cannot write %s" % path)
+		return
+	out.store_string(JSON.stringify(value, "\t"))
+	out.close()
+
+func _scan(dir_path: String, logger: Logger, cases: Array) -> void:
 	var dir := DirAccess.open(dir_path)
 	if dir == null:
 		return
@@ -70,8 +68,9 @@ func _scan(dir_path: String, logger: CaptureLogger, cases: Array) -> void:
 		name = dir.get_next()
 	dir.list_dir_end()
 
-func _check_file(path: String, logger: CaptureLogger, cases: Array) -> void:
-	logger.entries.clear()
+func _check_file(path: String, logger: Logger, cases: Array) -> void:
+	if logger.has_method("clear"):
+		logger.call("clear")
 	var opened := FileAccess.open(path, FileAccess.READ)
 	var source := ""
 	if opened:
@@ -81,14 +80,136 @@ func _check_file(path: String, logger: CaptureLogger, cases: Array) -> void:
 	script.source_code = source
 	var err := script.reload(false)
 	var logs: Array = []
-	for item in logger.entries:
-		var entry: Dictionary = item.duplicate(true)
-		var logged_file := str(entry.get("file", ""))
-		if logged_file.is_empty() or logged_file.begins_with("gdscript://") or not logged_file.begins_with("res://"):
-			entry["file"] = path
-		logs.append(entry)
+	if logger.has_method("take_entries"):
+		for item in logger.call("take_entries"):
+			var entry: Dictionary = item.duplicate(true)
+			entry["file"] = _remap_engine_file(str(entry.get("file", "")), path)
+			logs.append(entry)
+	var language_errors := _collect_script_language_errors(path)
 	cases.append({
 		"file": path,
 		"reload_error": err,
+		"reload_error_text": _engine_error_text(err),
 		"engine_logs": logs,
+		"language_errors": language_errors,
 	})
+
+func _remap_engine_file(file: String, fallback_path: String) -> String:
+	if file.is_empty() or file.begins_with("gdscript://") or not file.begins_with("res://"):
+		return fallback_path
+	return file
+
+func _collect_script_language_errors(path: String) -> Array:
+	var result: Array = []
+	for index in Engine.get_script_language_count():
+		var language := Engine.get_script_language(index)
+		if language == null:
+			continue
+		var payload := {
+			"language": language.get_class(),
+		}
+		var got_error := false
+		if language.has_method("get_name"):
+			payload["name"] = str(language.call("get_name"))
+		for method_name in ["debug_get_error", "get_error", "get_errors", "get_parse_errors", "get_error_list", "get_diagnostics"]:
+			if language.has_method(method_name):
+				var value: Variant = language.call(method_name)
+				if value == null or str(value).is_empty():
+					continue
+				payload[method_name] = value
+				got_error = true
+		if got_error:
+			payload["file"] = path
+			result.append(payload)
+	return result
+
+func _probe_error_apis() -> Dictionary:
+	var class_names: PackedStringArray = PackedStringArray([
+		"ScriptLanguage",
+		"GDScript",
+		"Script",
+		"ScriptEditor",
+		"ScriptEditorBase",
+		"CodeEdit",
+		"EditorInterface",
+		"Logger",
+		"ScriptBacktrace",
+		"GDScriptSyntaxHighlighter",
+	])
+	var classes := {}
+	for type_name in class_names:
+		if not ClassDB.class_exists(type_name):
+			classes[type_name] = {"exists": false, "methods": []}
+			continue
+		classes[type_name] = {
+			"exists": true,
+			"methods": _method_names_matching(ClassDB.class_get_method_list(type_name, false)),
+		}
+	var extra_classes: Array = []
+	for type_name in ClassDB.get_class_list():
+		var lowered := str(type_name).to_lower()
+		if lowered.contains("error") or lowered.contains("diagnos") or lowered.contains("gdscript"):
+			extra_classes.append({
+				"class": type_name,
+				"methods": _method_names_matching(ClassDB.class_get_method_list(type_name, false)),
+			})
+	var languages: Array = []
+	for index in Engine.get_script_language_count():
+		var language := Engine.get_script_language(index)
+		if language == null:
+			continue
+		languages.append({
+			"name": language.get_name() if language.has_method("get_name") else language.get_class(),
+			"class": language.get_class(),
+			"methods": _object_method_names_matching(language),
+		})
+	return {
+		"godot_version": Engine.get_version_info(),
+		"classes": classes,
+		"extra_error_related_classes": extra_classes,
+		"script_languages": languages,
+	}
+
+func _method_names_matching(methods: Array) -> PackedStringArray:
+	var names: PackedStringArray = PackedStringArray()
+	for item in methods:
+		var method_name := str(item.get("name", ""))
+		if _looks_like_error_api(method_name):
+			names.append(method_name)
+	names.sort()
+	return names
+
+func _object_method_names_matching(object: Object) -> PackedStringArray:
+	var names: PackedStringArray = PackedStringArray()
+	if object == null:
+		return names
+	for item in object.get_method_list():
+		var method_name := str(item.get("name", ""))
+		if _looks_like_error_api(method_name):
+			names.append(method_name)
+	names.sort()
+	return names
+
+func _looks_like_error_api(method_name: String) -> bool:
+	var lowered := method_name.to_lower()
+	for hint in ERROR_API_HINTS:
+		if lowered.contains(hint):
+			return true
+	return false
+
+func _engine_error_text(err: int) -> String:
+	match err:
+		OK:
+			return "ok"
+		ERR_PARSE_ERROR:
+			return "parse error"
+		ERR_COMPILATION_FAILED:
+			return "compilation failed"
+		ERR_INVALID_DECLARATION:
+			return "invalid declaration"
+		ERR_DUPLICATE_SYMBOL:
+			return "duplicate symbol"
+		ERR_SCRIPT_FAILED:
+			return "script failed"
+		_:
+			return "unknown engine error (%d)" % err

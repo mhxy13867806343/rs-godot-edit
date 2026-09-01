@@ -1,6 +1,6 @@
 # 修复日志
 
-工作窗口：2026-09-01 起，做到 **2026-09-02 09:30（Asia/Shanghai）**。每约 30 分钟测一轮、修一轮、更新文档并推送到 GitHub / Gitee。
+工作窗口：2026-09-01 起，做到 **2026-09-15 23:59:59（Asia/Shanghai）**。每约 30 分钟测一轮、修一轮、更新文档并推送到 GitHub / Gitee。
 
 ## 2026-09-01 第一轮（无界面）
 
@@ -21,6 +21,14 @@
 - **本轮最小修复：** 脚本编辑器整棵控件树（含父级、Tree、RichTextLabel 原文）里的引擎报错行原样进右上角面板；对不上固定格式的行只要带有引擎错误字样，也按原文显示。没有为 `@export` 或任何具体错误加 case。
 - **验证：** `cargo test` 12 通过，`cargo check` 通过。无界面 dump 再跑一遍：`RS_GODOT_EDIT_HEADLESS_CASES=28`，含 `static_check_sample.gd` 的 `@export` 引擎原文。未开 Godot GUI。
 - **再次卡住：** GitHub 推送 SSL 失败后等待确认超时；本轮已停掉长任务，只补这一行说明。
+
+## 2026-09-01 第三轮（约 23:50，新窗口第一轮）
+
+- **Godot：** 4.6.stable，仍只用 `--headless`。卡住进程会按二进制路径杀掉。
+- **用例：** 新增 29 个故意写坏的脚本（break/continue、缺 const、非法 lambda、`@export` 标在 func 上等）。引擎接受的 `@export_group` 未当错误，已丢掉。现 **57/57** 都有官方 Parse Error 原文，共 61 条 Logger 记录。路径已从 `gdscript://` 映回真实 `res://` 文件。
+- **API：** ClassDB 里脚本语言几乎没有暴露 get_error 列表；真正能拿到行号/原文/级别的是 `Logger._log_error`。dump 改用插件同一份 `editor_logger.gd`。插件对编辑器/语言对象只按方法名泛化调用（`debug_get_error` 等），没有为某句英文报错加分支。
+- **验证：** `cargo test` 12 通过，`cargo check` 通过。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。原始输出 `docs/headless_engine_errors.json`，API 探测 `docs/engine_error_api.json`。
+- **缺口：** 无 GUI 时拿不到列号（Logger 无 column）；脚本编辑器控件树那条路仍需编辑器会话才能测。
 
 ## 如何复跑
 

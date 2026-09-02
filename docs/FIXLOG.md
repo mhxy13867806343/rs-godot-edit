@@ -37,6 +37,13 @@
 - **列号：** 引擎 Logger 给出行号；`Logger._log_error` 没有 column，记录恒为 1。脚本语言 API 仍无 get_error 列表。控件树 GUI 本轮跳过。
 - **验证：** `cargo test` 12 通过。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。原始输出 `docs/headless_engine_errors.json`。
 
+## 2026-09-02 第五轮（无界面，约 08:40）
+
+- **Godot：** 4.6.stable，`--headless` 单次 dump，约 1 秒结束。
+- **用例：** 只新增 5 个新种类坏脚本（重复形参、void 函数有返回值、enum 字符串值、嵌套命名 func、函数体内 `signal`）。现 **67/67** 都有官方 Parse Error 原文，72 条 Logger。没有为具体错误加 if/启发式。
+- **列号：** 探测 `Logger._log_error` 参数只有 file/line，没有 column；`ScriptBacktrace` 有 `get_frame_line` 无 `get_frame_column`；相关类没有带 column 的方法。记录仍恒为 1。控件树 GUI 本轮跳过。
+- **验证：** `cargo test` 12 通过。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
+
 ## 如何复跑
 
 ```bash

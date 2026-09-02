@@ -6,6 +6,21 @@
 				"_get_accessibility_configuration_warnings",
 				"_get_configuration_warnings",
 				"_structured_text_parser",
+				"get_caret_column",
+				"get_first_non_whitespace_column",
+				"get_line_column_at_pos",
+				"get_line_wrap_index_at_column",
+				"get_next_composite_character_column",
+				"get_pos_at_line_column",
+				"get_previous_composite_character_column",
+				"get_rect_at_line_column",
+				"get_selection_at_line_column",
+				"get_selection_column",
+				"get_selection_from_column",
+				"get_selection_origin_column",
+				"get_selection_to_column",
+				"set_caret_column",
+				"set_selection_origin_column",
 				"update_configuration_warnings"
 			]
 		},
@@ -57,6 +72,29 @@
 			"exists": true,
 			"methods": []
 		}
+	},
+	"column_probe": {
+		"logger_log_error": {
+			"args": [
+				"function",
+				"file",
+				"line",
+				"code",
+				"rationale",
+				"editor_notify",
+				"error_type",
+				"script_backtraces"
+			],
+			"has_column_arg": false,
+			"name": "_log_error"
+		},
+		"methods_with_column": [],
+		"script_backtrace_frame_methods": [
+			"get_frame_count",
+			"get_frame_file",
+			"get_frame_function",
+			"get_frame_line"
+		]
 	},
 	"extra_error_related_classes": [
 		{

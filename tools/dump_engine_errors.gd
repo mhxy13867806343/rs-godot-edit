@@ -1,7 +1,7 @@
 extends SceneTree
 
 const FIXTURE_ROOT := "res://fixtures"
-const ERROR_API_HINTS := ["error", "diagnos", "warning", "logger", "parse"]
+const ERROR_API_HINTS := ["error", "diagnos", "warning", "logger", "parse", "column"]
 
 func _initialize() -> void:
 	var logger_script := load("res://addons/rs_godot_edit/editor_logger.gd")
@@ -168,6 +168,43 @@ func _probe_error_apis() -> Dictionary:
 		"classes": classes,
 		"extra_error_related_classes": extra_classes,
 		"script_languages": languages,
+		"column_probe": _probe_column_apis(),
+	}
+
+func _probe_column_apis() -> Dictionary:
+	var logger_log_error := {}
+	if ClassDB.class_exists("Logger"):
+		for item in ClassDB.class_get_method_list("Logger", true):
+			if str(item.get("name", "")) == "_log_error":
+				var args: PackedStringArray = PackedStringArray()
+				for arg in item.get("args", []):
+					args.append(str(arg.get("name", "")))
+				logger_log_error = {
+					"name": "_log_error",
+					"args": args,
+					"has_column_arg": args.find("column") >= 0 or args.find("col") >= 0,
+				}
+				break
+	var backtrace_location_methods: PackedStringArray = PackedStringArray()
+	if ClassDB.class_exists("ScriptBacktrace"):
+		for item in ClassDB.class_get_method_list("ScriptBacktrace", true):
+			var method_name := str(item.get("name", ""))
+			if method_name.begins_with("get_frame_"):
+				backtrace_location_methods.append(method_name)
+		backtrace_location_methods.sort()
+	var column_methods: PackedStringArray = PackedStringArray()
+	for type_name in ["Logger", "ScriptBacktrace", "GDScript", "Script", "ScriptLanguage"]:
+		if not ClassDB.class_exists(type_name):
+			continue
+		for item in ClassDB.class_get_method_list(type_name, true):
+			var method_name := str(item.get("name", ""))
+			if method_name.to_lower().contains("column"):
+				column_methods.append("%s.%s" % [type_name, method_name])
+	column_methods.sort()
+	return {
+		"logger_log_error": logger_log_error,
+		"script_backtrace_frame_methods": backtrace_location_methods,
+		"methods_with_column": column_methods,
 	}
 
 func _method_names_matching(methods: Array) -> PackedStringArray:

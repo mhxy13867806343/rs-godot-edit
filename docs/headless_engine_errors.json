@@ -1,5 +1,5 @@
 {
-	"case_count": 62,
+	"case_count": 67,
 	"cases": [
 		{
 			"engine_logs": [
@@ -500,6 +500,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/enum_string_value.gd",
+					"line": 3,
+					"message": "Parse Error: Enum values must be integers.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/enum_string_value.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/syntax_unclosed_bracket.gd",
 					"line": 4,
 					"message": "Parse Error: Expected closing \"]\" after array elements.",
@@ -593,6 +610,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/syntax_unclosed_string.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/void_returns_value.gd",
+					"line": 4,
+					"message": "Parse Error: A void function cannot return a value.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/void_returns_value.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -747,6 +781,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/nested_named_func.gd",
+					"line": 4,
+					"message": "Parse Error: Standalone lambdas cannot be accessed. Consider assigning it to a variable.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/nested_named_func.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/invalid_lambda.gd",
 					"line": 4,
 					"message": "Parse Error: Expected opening \"(\" after \"func\".",
@@ -883,6 +934,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/static_incomplete.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/signal_inside_func.gd",
+					"line": 4,
+					"message": "Parse Error: Expected statement, found \"signal\" instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/signal_inside_func.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1054,6 +1122,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/duplicate_param.gd",
+					"line": 3,
+					"message": "Parse Error: Parameter with name \"a\" was already declared for this function.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/duplicate_param.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/unknown_identifier.gd",
 					"line": 4,
 					"message": "Parse Error: Identifier \"nope\" not declared in the current scope.",
@@ -1103,7 +1188,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-02 07:36:42",
+	"generated_at": "2026-09-02 08:40:00",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1115,6 +1200,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 67,
-	"with_engine_logs": 62
+	"panel_item_count": 72,
+	"with_engine_logs": 67
 }

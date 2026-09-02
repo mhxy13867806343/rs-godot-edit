@@ -65,6 +65,13 @@
 - **列号：** `Logger._log_error` 仍无 column；`ScriptBacktrace` 无 `get_frame_column`。记录恒为 1。控件树 GUI 本轮跳过。
 - **验证：** `cargo test` 12 通过。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
 
+## 2026-09-02 第九轮（无界面，约 14:54）
+
+- **Godot：** 4.6.stable，`--headless` 单次 dump，约 1 秒结束。
+- **用例：** 只新增 5 个新种类坏脚本（`or()` 当函数、`@export_range` 无参数、`while` 条件 `int == String`、内部 class 重复 `extends`、`@warning_ignore` 未知警告名）。现 **87/87** 都有官方 Parse Error 原文，94 条 Logger。没有为具体错误加 if/启发式。未重复已有 `and()`/`@export_enum`/`match` 缺冒号/`const` 无初值/`Array[int]` 塞 String/`while` 缺条件。
+- **列号：** `Logger._log_error` 仍无 column；`ScriptBacktrace` 无 `get_frame_column`。记录恒为 1。控件树 GUI 本轮跳过。
+- **验证：** `cargo test` 12 通过。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
+
 ## 如何复跑
 
 ```bash

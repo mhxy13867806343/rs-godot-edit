@@ -1,5 +1,5 @@
 {
-	"case_count": 82,
+	"case_count": 87,
 	"cases": [
 		{
 			"engine_logs": [
@@ -210,6 +210,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/while_cond_type.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator ==, int and String.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/while_cond_type.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/invalid_super.gd",
 					"line": 4,
 					"message": "Parse Error: Function \"definitely_not_a_method()\" not found in base Node.",
@@ -346,6 +363,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/trailing_operator.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_range_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@export_range\" requires at least 2 arguments, but 0 were given.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_range_illegal.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1105,6 +1139,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/or_as_function.gd",
+					"line": 4,
+					"message": "Parse Error: Expected statement, found \"or\" instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/or_as_function.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/static_incomplete.gd",
 					"line": 4,
 					"message": "Parse Error: Expected statement, found \"static\" instead.",
@@ -1113,6 +1164,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/static_incomplete.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/warning_ignore_unknown.gd",
+					"line": 3,
+					"message": "Parse Error: Invalid warning name: \"not_a_real_warning\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/warning_ignore_unknown.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1198,6 +1266,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/var_missing_type.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/inner_class_extends_conflict.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot use \"extends\" more than once in the same class.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/inner_class_extends_conflict.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1461,7 +1546,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-02 12:07:43",
+	"generated_at": "2026-09-02 14:55:21",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1473,6 +1558,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 89,
-	"with_engine_logs": 82
+	"panel_item_count": 94,
+	"with_engine_logs": 87
 }

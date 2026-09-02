@@ -1,5 +1,5 @@
 {
-	"case_count": 87,
+	"case_count": 92,
 	"cases": [
 		{
 			"engine_logs": [
@@ -31,6 +31,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/duplicate_var.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/not_as_function.gd",
+					"line": 4,
+					"message": "Parse Error: Expected closing \")\" after grouping expression.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/not_as_function.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -423,6 +440,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_flags_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@export_flags\" requires at least 1 arguments, but 0 were given.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_flags_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/for_missing_in.gd",
 					"line": 4,
 					"message": "Parse Error: Expected \"in\" or \":\" after \"for\" variable name.",
@@ -474,6 +508,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/typed_dict_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/typed_dict_key_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot include a value of type \"int\" as \"String\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/typed_dict_key_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot have a key of type \"int\" in a dictionary of type \"Dictionary[String, int]\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/typed_dict_key_mismatch.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1088,6 +1148,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_node_path_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_node_path\" annotation requires a variable of type \"NodePath\" or \"Array[NodePath]\", but type \"int\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_node_path_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/await_in_class_body.gd",
 					"line": 3,
 					"message": "Parse Error: Unexpected \"await\" in class body.",
@@ -1326,6 +1403,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/duplicate_signal.gd",
+					"line": 4,
+					"message": "Parse Error: Signal \"ready_now\" has the same name as a previously declared signal.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/duplicate_signal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/break_outside_loop.gd",
 					"line": 4,
 					"message": "Parse Error: Cannot use \"break\" outside of a loop.",
@@ -1546,7 +1640,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-02 14:55:21",
+	"generated_at": "2026-09-02 15:25:02",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1558,6 +1652,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 94,
-	"with_engine_logs": 87
+	"panel_item_count": 100,
+	"with_engine_logs": 92
 }

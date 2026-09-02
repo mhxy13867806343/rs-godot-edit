@@ -1,5 +1,5 @@
 {
-	"case_count": 102,
+	"case_count": 107,
 	"cases": [
 		{
 			"engine_logs": [
@@ -499,6 +499,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/for_missing_in.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/pass_as_expression.gd",
+					"line": 4,
+					"message": "Parse Error: Expected expression as the function argument.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/pass_as_expression.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1608,6 +1625,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/vector2_add_vector3.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator +, Vector2 and Vector3.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/vector2_add_vector3.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/break_outside_loop.gd",
 					"line": 4,
 					"message": "Parse Error: Cannot use \"break\" outside of a loop.",
@@ -1668,6 +1702,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_file_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_file\" annotation requires a variable of type \"String\", \"Array[String]\", or \"PackedStringArray\", but type \"int\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_file_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/inferred_var_missing_value.gd",
 					"line": 4,
 					"message": "Parse Error: Expected expression for variable initial value after \"=\".",
@@ -1676,6 +1727,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/inferred_var_missing_value.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/load_arg_count.gd",
+					"line": 4,
+					"message": "Parse Error: Too few arguments for \"load()\" call. Expected at least 1 but received 0.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/load_arg_count.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1779,6 +1847,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/color_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"Color\" matches the signature \"Color(int, int, int, int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/color_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/and_as_function.gd",
 					"line": 4,
 					"message": "Parse Error: Expected statement, found \"and\" instead.",
@@ -1828,7 +1913,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-02 19:38:28",
+	"generated_at": "2026-09-02 20:03:13",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1840,6 +1925,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 112,
-	"with_engine_logs": 102
+	"panel_item_count": 117,
+	"with_engine_logs": 107
 }

@@ -1,5 +1,5 @@
 {
-	"case_count": 97,
+	"case_count": 102,
 	"cases": [
 		{
 			"engine_logs": [
@@ -312,6 +312,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_color_no_alpha_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_color_no_alpha\" annotation requires a variable of type \"Color\", \"Array[Color]\", or \"PackedColorArray\", but type \"int\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_color_no_alpha_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/bad_signal.gd",
 					"line": 3,
 					"message": "Parse Error: Expected signal name after \"signal\".",
@@ -337,6 +354,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/syntax_unclosed_paren.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/bitwise_on_float.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator &, float and int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/bitwise_on_float.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -952,6 +986,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/power_type_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator **, String and int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/power_type_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/is_not_incomplete.gd",
 					"line": 4,
 					"message": "Parse Error: Expected type specifier after \"is not\".",
@@ -1225,6 +1276,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/modulo_type_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator %, bool and int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/modulo_type_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/indent_mixed.gd",
 					"line": 5,
 					"message": "Parse Error: Expected statement, found \"Indent\" instead.",
@@ -1463,6 +1531,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/export_multiline_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/var_func_same_name.gd",
+					"line": 5,
+					"message": "Parse Error: Function \"test\" has the same name as a previously declared variable.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/var_func_same_name.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1743,7 +1828,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-02 15:54:47",
+	"generated_at": "2026-09-02 19:38:28",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1755,6 +1840,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 107,
-	"with_engine_logs": 97
+	"panel_item_count": 112,
+	"with_engine_logs": 102
 }

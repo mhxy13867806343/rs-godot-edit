@@ -1,5 +1,5 @@
 {
-	"case_count": 67,
+	"case_count": 72,
 	"cases": [
 		{
 			"engine_logs": [
@@ -176,6 +176,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/rpc_bad_mode.gd",
+					"line": 3,
+					"message": "Parse Error: Invalid RPC argument. Must be one of: \"call_local\"/\"call_remote\" (local calls), \"any_peer\"/\"authority\" (permission), \"reliable\"/\"unreliable\"/\"unreliable_ordered\" (transfer mode).",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/rpc_bad_mode.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/invalid_super.gd",
 					"line": 4,
 					"message": "Parse Error: Function \"definitely_not_a_method()\" not found in base Node.",
@@ -210,6 +227,40 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/match_when_incomplete.gd",
+					"line": 5,
+					"message": "Parse Error: Expected expression for pattern guard after \"when\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/match_when_incomplete.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/static_reads_member.gd",
+					"line": 6,
+					"message": "Parse Error: Cannot access non-static variable \"member\" from the static function \"broken()\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/static_reads_member.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/bad_signal.gd",
 					"line": 3,
 					"message": "Parse Error: Expected signal name after \"signal\".",
@@ -235,6 +286,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/syntax_unclosed_paren.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/inferred_reassign.gd",
+					"line": 5,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"int\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/inferred_reassign.gd",
+					"line": 5,
+					"message": "Parse Error: Value of type \"String\" cannot be assigned to a variable of type \"int\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/inferred_reassign.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -329,6 +406,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/typed_dict_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/await_missing_expr.gd",
+					"line": 4,
+					"message": "Parse Error: Expected signal or coroutine after \"await\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/await_missing_expr.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1188,7 +1282,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-02 08:40:00",
+	"generated_at": "2026-09-02 09:13:22",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1200,6 +1294,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 72,
-	"with_engine_logs": 67
+	"panel_item_count": 78,
+	"with_engine_logs": 72
 }

@@ -1,5 +1,5 @@
 {
-	"case_count": 107,
+	"case_count": 112,
 	"cases": [
 		{
 			"engine_logs": [
@@ -542,6 +542,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/rid_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"RID\" matches the signature \"RID(int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/rid_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/typed_dict_mismatch.gd",
 					"line": 4,
 					"message": "Parse Error: Cannot include a value of type \"String\" as \"int\".",
@@ -730,6 +747,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/tool_not_first.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/nodepath_assigned_int.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"NodePath\" as \"int\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/nodepath_assigned_int.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type NodePath to variable \"x\" with specified type int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/nodepath_assigned_int.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1489,6 +1532,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_placeholder_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@export_placeholder\" requires at least 1 arguments, but 0 were given.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_placeholder_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/var_missing_type.gd",
 					"line": 3,
 					"message": "Parse Error: Expected indented block for property after \":\".",
@@ -1702,6 +1762,32 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/callable_type_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"int\" as \"Callable\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/callable_type_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type int to variable \"x\" with specified type Callable.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/callable_type_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/export_file_illegal.gd",
 					"line": 3,
 					"message": "Parse Error: \"@export_file\" annotation requires a variable of type \"String\", \"Array[String]\", or \"PackedStringArray\", but type \"int\" was given instead.",
@@ -1830,6 +1916,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_dir_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_dir\" annotation requires a variable of type \"String\", \"Array[String]\", or \"PackedStringArray\", but type \"int\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_dir_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/unknown_identifier.gd",
 					"line": 4,
 					"message": "Parse Error: Identifier \"nope\" not declared in the current scope.",
@@ -1913,7 +2016,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-02 20:03:13",
+	"generated_at": "2026-09-03 00:00:36",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1925,6 +2028,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 117,
-	"with_engine_logs": 107
+	"panel_item_count": 124,
+	"with_engine_logs": 112
 }

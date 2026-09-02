@@ -1,5 +1,5 @@
 {
-	"case_count": 92,
+	"case_count": 97,
 	"cases": [
 		{
 			"engine_logs": [
@@ -773,6 +773,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/as_illegal_cast.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid cast. Cannot convert from \"int\" to \"Node\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/as_illegal_cast.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/match_no_branches.gd",
 					"line": 4,
 					"message": "Parse Error: Expected \":\" after \"match\" expression.",
@@ -815,6 +832,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/const_reassign.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_byte_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"PackedByteArray\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_byte_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type String to variable \"data\" with specified type PackedByteArray.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/packed_byte_array_mismatch.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1267,6 +1310,32 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/nodepath_ampersand_misuse.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"StringName\" as \"int\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/nodepath_ampersand_misuse.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type StringName to variable \"x\" with specified type int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/nodepath_ampersand_misuse.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/signal_inside_func.gd",
 					"line": 4,
 					"message": "Parse Error: Expected statement, found \"signal\" instead.",
@@ -1377,6 +1446,40 @@
 				}
 			],
 			"file": "res://fixtures/generated/invalid_rpc_on_var.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_multiline_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_multiline\" annotation requires a variable of type \"String\", \"Array[String]\", \"PackedStringArray\", \"Dictionary\", or \"Array[Dictionary]\", but type \"int\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_multiline_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/in_operand_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator in, int and int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/in_operand_illegal.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1640,7 +1743,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-02 15:25:02",
+	"generated_at": "2026-09-02 15:54:47",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -1652,6 +1755,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 100,
-	"with_engine_logs": 92
+	"panel_item_count": 107,
+	"with_engine_logs": 97
 }

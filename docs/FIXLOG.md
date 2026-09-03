@@ -163,6 +163,13 @@
 - **列号：** `Logger._log_error` 仍无 column 参数；`ScriptBacktrace` 无 `get_frame_column`。记录恒为 1。控件树 GUI 本轮跳过。
 - **验证：** 无 Rust 改动，未跑 `cargo test`。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
 
+## 2026-09-03 第二十三轮（无界面，约 21:12）
+
+- **Godot：** 4.6.stable，`--headless` 单次 dump，约 3 秒结束。
+- **用例：** 只新增 5 个新种类坏脚本（`var 1x` 非法标识符、`func` 的 `->` 后缺返回类型、`@warning_ignore_start` 未知警告、`class` 缺名称、`func ():` 缺函数名）。现 **157/157** 都有官方 Parse Error 原文，180 条 Logger。没有为具体错误加 if/启发式。未重复已有 `@onready` 标在 const/`for` 缺 `in`/`signal` 缺名称/Packed*Array 赋 String/`@export_flags_*`/`$Node`/`get_node`/`@icon`/`class_name` 非法/`@abstract`。
+- **列号：** `Logger._log_error` 仍无 column 参数；`ScriptBacktrace` 无 `get_frame_column`。记录恒为 1。控件树 GUI 本轮跳过。
+- **验证：** 无 Rust 改动，未跑 `cargo test`。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
+
 ## 如何复跑
 
 ```bash

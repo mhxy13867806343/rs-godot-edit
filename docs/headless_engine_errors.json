@@ -1,5 +1,5 @@
 {
-	"case_count": 152,
+	"case_count": 157,
 	"cases": [
 		{
 			"engine_logs": [
@@ -108,6 +108,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/duplicate_class_name.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/var_illegal_identifier.gd",
+					"line": 3,
+					"message": "Parse Error: Expected variable name after \"var\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/var_illegal_identifier.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -637,6 +654,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/bitwise_on_float.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/func_missing_name.gd",
+					"line": 3,
+					"message": "Parse Error: Expected function name after \"func\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/func_missing_name.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2226,6 +2260,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/func_missing_return_type.gd",
+					"line": 3,
+					"message": "Parse Error: Expected return type or \"void\" after \"->\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/func_missing_return_type.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/func_return_unknown.gd",
 					"line": 3,
 					"message": "Parse Error: Could not find type \"NotARealType\" in the current scope.",
@@ -2404,6 +2455,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/break_outside_loop.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/class_missing_name.gd",
+					"line": 3,
+					"message": "Parse Error: Expected identifier for the class name after \"class\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/class_missing_name.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2712,6 +2780,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/warning_ignore_start_unknown.gd",
+					"line": 3,
+					"message": "Parse Error: Invalid warning name: \"not_a_real_warning\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/warning_ignore_start_unknown.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/export_flags_3d_render_illegal.gd",
 					"line": 3,
 					"message": "Parse Error: \"@export_flags_3d_render\" annotation requires a variable of type \"int\", \"Array[int]\", \"PackedByteArray\", \"PackedInt32Array\", or \"PackedInt64Array\", but type \"String\" was given instead.",
@@ -2795,7 +2880,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 20:27:35",
+	"generated_at": "2026-09-03 21:12:05",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2807,6 +2892,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 175,
-	"with_engine_logs": 152
+	"panel_item_count": 180,
+	"with_engine_logs": 157
 }

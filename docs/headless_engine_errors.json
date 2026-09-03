@@ -1,5 +1,5 @@
 {
-	"case_count": 122,
+	"case_count": 127,
 	"cases": [
 		{
 			"engine_logs": [
@@ -210,6 +210,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/transform3d_mul_string.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator *, Transform3D and String.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/transform3d_mul_string.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/syntax_missing_colon.gd",
 					"line": 4,
 					"message": "Parse Error: Unexpected \"Indent\" in class body.",
@@ -269,6 +286,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/transform2d_mul_string.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_float32_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"PackedFloat32Array\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_float32_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type String to variable \"data\" with specified type PackedFloat32Array.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/packed_float32_array_mismatch.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2035,6 +2078,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/rect2_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"Rect2\" matches the signature \"Rect2(int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/rect2_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/for_typed_mismatch.gd",
 					"line": 4,
 					"message": "Parse Error: Cannot include a value of type \"int\" as \"String\".",
@@ -2163,6 +2223,40 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/projection_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"Projection\" matches the signature \"Projection(int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/projection_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_global_dir_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_global_dir\" annotation requires a variable of type \"String\", \"Array[String]\", or \"PackedStringArray\", but type \"int\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_global_dir_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/abstract_on_var.gd",
 					"line": 4,
 					"message": "Parse Error: Annotation \"@abstract\" cannot be applied to a variable.",
@@ -2195,7 +2289,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 10:47:57",
+	"generated_at": "2026-09-03 11:31:48",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2207,6 +2301,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 135,
-	"with_engine_logs": 122
+	"panel_item_count": 141,
+	"with_engine_logs": 127
 }

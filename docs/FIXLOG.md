@@ -114,6 +114,13 @@
 - **列号：** `Logger._log_error` 仍无 column 参数；`ScriptBacktrace` 无 `get_frame_column`。记录恒为 1。控件树 GUI 本轮跳过。
 - **验证：** `cargo test` 12 通过。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
 
+## 2026-09-03 第十六轮（无界面，约 10:48）
+
+- **Godot：** 4.6.stable，`--headless` 单次 dump，约 1 秒结束。
+- **用例：** 只新增 5 个新种类坏脚本（`@export_global_file` 标在 `int` 上、`Basis(1, 2)`、`Plane * String`、`Quaternion(1, 2)`、`PackedInt32Array` 赋 String）。现 **122/122** 都有官方 Parse Error 原文，135 条 Logger。没有为具体错误加 if/启发式。引擎接受 `match` 重复分支与 `enum` 重复值，未入库；未重复已有非法 `@rpc`/`PackedByteArray`/`AABB`/`Transform2D * String`/`@export_file`。
+- **列号：** `Logger._log_error` 仍无 column 参数；`ScriptBacktrace` 无 `get_frame_column`。记录恒为 1。控件树 GUI 本轮跳过。
+- **验证：** 无 Rust 改动，未跑 `cargo test`。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
+
 ## 如何复跑
 
 ```bash

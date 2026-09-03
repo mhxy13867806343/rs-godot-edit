@@ -1,5 +1,5 @@
 {
-	"case_count": 117,
+	"case_count": 122,
 	"cases": [
 		{
 			"engine_logs": [
@@ -159,6 +159,40 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/plane_mul_string.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator *, Plane and String.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/plane_mul_string.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/quaternion_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"Quaternion\" matches the signature \"Quaternion(int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/quaternion_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/property_incomplete_getter.gd",
 					"line": 4,
 					"message": "Parse Error: Expected \":\" or \"(\" after \"get\".",
@@ -252,6 +286,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/rpc_bad_mode.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/basis_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"Basis\" matches the signature \"Basis(int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/basis_ctor_illegal.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -550,6 +601,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/pass_as_expression.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_int32_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"PackedInt32Array\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_int32_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type String to variable \"data\" with specified type PackedInt32Array.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/packed_int32_array_mismatch.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1549,6 +1626,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_global_file_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_global_file\" annotation requires a variable of type \"String\", \"Array[String]\", or \"PackedStringArray\", but type \"int\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_global_file_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/static_unload_misplaced.gd",
 					"line": 3,
 					"message": "Parse Error: Annotation \"@static_unload\" must be at the top of the script, before \"extends\" and \"class_name\".",
@@ -2101,7 +2195,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 08:42:16",
+	"generated_at": "2026-09-03 10:47:57",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2113,6 +2207,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 129,
-	"with_engine_logs": 117
+	"panel_item_count": 135,
+	"with_engine_logs": 122
 }

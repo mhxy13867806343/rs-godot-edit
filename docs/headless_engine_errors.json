@@ -1,6 +1,32 @@
 {
-	"case_count": 137,
+	"case_count": 142,
 	"cases": [
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_vector3_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"PackedVector3Array\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_vector3_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type String to variable \"data\" with specified type PackedVector3Array.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/packed_vector3_array_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
 		{
 			"engine_logs": [
 				{
@@ -1013,6 +1039,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_flags_3d_physics_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_flags_3d_physics\" annotation requires a variable of type \"int\", \"Array[int]\", \"PackedByteArray\", \"PackedInt32Array\", or \"PackedInt64Array\", but type \"String\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_flags_3d_physics_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/nodepath_assigned_int.gd",
 					"line": 4,
 					"message": "Parse Error: Cannot assign a value of type \"NodePath\" as \"int\".",
@@ -1465,6 +1508,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/signal_assigned_int.gd",
+					"line": 6,
+					"message": "Parse Error: Cannot assign a value of type Signal to variable \"x\" with specified type int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/signal_assigned_int.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/vector3i_ctor_illegal.gd",
 					"line": 4,
 					"message": "Parse Error: No constructor of \"Vector3i\" matches the signature \"Vector3i(int, int)\".",
@@ -1899,6 +1959,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/export_placeholder_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_string_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"int\" as \"PackedStringArray\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_string_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type int to variable \"data\" with specified type PackedStringArray.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/packed_string_array_mismatch.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2411,6 +2497,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_flags_3d_render_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_flags_3d_render\" annotation requires a variable of type \"int\", \"Array[int]\", \"PackedByteArray\", \"PackedInt32Array\", or \"PackedInt64Array\", but type \"String\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_flags_3d_render_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/projection_ctor_illegal.gd",
 					"line": 4,
 					"message": "Parse Error: No constructor of \"Projection\" matches the signature \"Projection(int, int)\".",
@@ -2477,7 +2580,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 18:13:07",
+	"generated_at": "2026-09-03 18:57:02",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2489,6 +2592,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 153,
-	"with_engine_logs": 137
+	"panel_item_count": 160,
+	"with_engine_logs": 142
 }

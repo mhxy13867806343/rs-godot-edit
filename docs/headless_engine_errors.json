@@ -1,5 +1,5 @@
 {
-	"case_count": 112,
+	"case_count": 117,
 	"cases": [
 		{
 			"engine_logs": [
@@ -31,6 +31,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/duplicate_var.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/signal_param_type_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: Expected closing \")\" after signal parameters.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/signal_param_type_illegal.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -201,6 +218,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/export_on_func.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/transform2d_mul_string.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator *, Transform2D and String.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/transform2d_mul_string.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1302,6 +1336,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_storage_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@export_storage\" cannot be applied to a function.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_storage_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/export_node_path_illegal.gd",
 					"line": 3,
 					"message": "Parse Error: \"@export_node_path\" annotation requires a variable of type \"NodePath\" or \"Array[NodePath]\", but type \"int\" was given instead.",
@@ -1540,6 +1591,40 @@
 				}
 			],
 			"file": "res://fixtures/generated/export_placeholder_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/aabb_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"AABB\" matches the signature \"AABB(int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/aabb_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/func_return_unknown.gd",
+					"line": 3,
+					"message": "Parse Error: Could not find type \"NotARealType\" in the current scope.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/func_return_unknown.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2016,7 +2101,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 00:00:36",
+	"generated_at": "2026-09-03 08:42:16",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2028,6 +2113,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 124,
-	"with_engine_logs": 112
+	"panel_item_count": 129,
+	"with_engine_logs": 117
 }

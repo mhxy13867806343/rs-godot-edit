@@ -1,5 +1,5 @@
 {
-	"case_count": 142,
+	"case_count": 147,
 	"cases": [
 		{
 			"engine_logs": [
@@ -278,6 +278,49 @@
 				}
 			],
 			"file": "res://fixtures/generated/empty_func_body.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_flags_2d_render_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_flags_2d_render\" annotation requires a variable of type \"int\", \"Array[int]\", \"PackedByteArray\", \"PackedInt32Array\", or \"PackedInt64Array\", but type \"String\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_flags_2d_render_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_float64_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"PackedFloat64Array\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_float64_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type String to variable \"data\" with specified type PackedFloat64Array.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/packed_float64_array_mismatch.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -799,6 +842,32 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/packed_vector4_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"PackedVector4Array\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_vector4_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type String to variable \"data\" with specified type PackedVector4Array.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/packed_vector4_array_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/typed_dict_mismatch.gd",
 					"line": 4,
 					"message": "Parse Error: Cannot include a value of type \"String\" as \"int\".",
@@ -971,6 +1040,32 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/packed_int64_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"PackedInt64Array\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/packed_int64_array_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type String to variable \"data\" with specified type PackedInt64Array.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/packed_int64_array_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/broken_match.gd",
 					"line": 4,
 					"message": "Parse Error: Expected \":\" after \"match\" expression.",
@@ -1107,6 +1202,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/unknown_type_hint.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_flags_3d_navigation_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: \"@export_flags_3d_navigation\" annotation requires a variable of type \"int\", \"Array[int]\", \"PackedByteArray\", \"PackedInt32Array\", or \"PackedInt64Array\", but type \"String\" was given instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_flags_3d_navigation_illegal.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2580,7 +2692,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 18:57:02",
+	"generated_at": "2026-09-03 19:41:25",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2592,6 +2704,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 160,
-	"with_engine_logs": 142
+	"panel_item_count": 168,
+	"with_engine_logs": 147
 }

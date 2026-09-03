@@ -1,5 +1,5 @@
 {
-	"case_count": 127,
+	"case_count": 132,
 	"cases": [
 		{
 			"engine_logs": [
@@ -338,6 +338,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_tool_button_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@export_tool_button\" requires at least 1 arguments, but 0 were given.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_tool_button_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/basis_ctor_illegal.gd",
 					"line": 4,
 					"message": "Parse Error: No constructor of \"Basis\" matches the signature \"Basis(int, int)\".",
@@ -619,6 +636,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/vector4_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"Vector4\" matches the signature \"Vector4(int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/vector4_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/for_missing_in.gd",
 					"line": 4,
 					"message": "Parse Error: Expected \"in\" or \":\" after \"for\" variable name.",
@@ -790,6 +824,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/annotation_unknown.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_custom_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@export_custom\" requires at least 2 arguments, but 0 were given.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_custom_illegal.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1370,6 +1421,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/nested_named_func.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/rect2i_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"Rect2i\" matches the signature \"Rect2i(int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/rect2i_ctor_illegal.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2027,6 +2095,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/vector2i_ctor_illegal.gd",
+					"line": 4,
+					"message": "Parse Error: No constructor of \"Vector2i\" matches the signature \"Vector2i(int, int, int)\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/vector2i_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/inferred_var_missing_value.gd",
 					"line": 4,
 					"message": "Parse Error: Expected expression for variable initial value after \"=\".",
@@ -2289,7 +2374,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 11:31:48",
+	"generated_at": "2026-09-03 12:17:04",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2301,6 +2386,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 141,
-	"with_engine_logs": 127
+	"panel_item_count": 146,
+	"with_engine_logs": 132
 }

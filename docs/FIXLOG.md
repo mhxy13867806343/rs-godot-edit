@@ -128,6 +128,13 @@
 - **列号：** `Logger._log_error` 仍无 column 参数；`ScriptBacktrace` 无 `get_frame_column`。记录恒为 1。控件树 GUI 本轮跳过。
 - **验证：** 无 Rust 改动，未跑 `cargo test`。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
 
+## 2026-09-03 第十八轮（无界面，约 12:17）
+
+- **Godot：** 4.6.stable，`--headless` 单次 dump，约 1 秒结束。
+- **用例：** 只新增 5 个新种类坏脚本（`Vector4(1, 2)`、`@export_custom` 无参数、`Rect2i(1, 2)`、`@export_tool_button` 无参数、`Vector2i(1, 2, 3)`）。引擎接受 `@export_exp_easing` 标在 `int` 上，未入库。现 **132/132** 都有官方 Parse Error 原文，146 条 Logger。没有为具体错误加 if/启发式。未重复已有 `Rect2`/`Packed*Array`/`Transform*`/`Plane`/`Projection`/`@export_*_dir`/`_file`/`break`。
+- **列号：** `Logger._log_error` 仍无 column 参数；`ScriptBacktrace` 无 `get_frame_column`。记录恒为 1。控件树 GUI 本轮跳过。
+- **验证：** 无 Rust 改动，未跑 `cargo test`。`RS_GODOT_EDIT_HEADLESS_EMPTY=0`。
+
 ## 如何复跑
 
 ```bash

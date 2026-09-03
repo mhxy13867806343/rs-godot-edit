@@ -1,5 +1,5 @@
 {
-	"case_count": 157,
+	"case_count": 160,
 	"cases": [
 		{
 			"engine_logs": [
@@ -2243,6 +2243,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_on_static_var.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@export\" cannot be applied to a static variable.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_on_static_var.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/aabb_ctor_illegal.gd",
 					"line": 4,
 					"message": "Parse Error: No constructor of \"AABB\" matches the signature \"AABB(int, int)\".",
@@ -2285,6 +2302,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/func_return_unknown.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/const_assigned_call.gd",
+					"line": 3,
+					"message": "Parse Error: Assigned value for constant \"VALUE\" isn't a constant expression.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/const_assigned_call.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2780,6 +2814,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/extends_number.gd",
+					"line": 1,
+					"message": "Parse Error: Only strings or identifiers can be used after \"extends\", found \"int\" instead.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/extends_number.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/warning_ignore_start_unknown.gd",
 					"line": 3,
 					"message": "Parse Error: Invalid warning name: \"not_a_real_warning\".",
@@ -2880,7 +2931,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 21:12:05",
+	"generated_at": "2026-09-04 00:10:35",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2892,6 +2943,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 180,
-	"with_engine_logs": 157
+	"panel_item_count": 183,
+	"with_engine_logs": 160
 }

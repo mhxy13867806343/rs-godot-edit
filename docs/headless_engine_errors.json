@@ -1,5 +1,5 @@
 {
-	"case_count": 147,
+	"case_count": 152,
 	"cases": [
 		{
 			"engine_logs": [
@@ -210,6 +210,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/quaternion_ctor_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/get_node_int_arg.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot pass a value of type \"int\" as \"NodePath\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/get_node_int_arg.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid argument for \"get_node()\" function: argument 1 should be \"NodePath\" but is \"int\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/get_node_int_arg.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1040,6 +1066,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/unique_name_assigned_int.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type Node to variable \"x\" with specified type int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/unique_name_assigned_int.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/packed_int64_array_mismatch.gd",
 					"line": 4,
 					"message": "Parse Error: Cannot assign a value of type \"String\" as \"PackedInt64Array\".",
@@ -1313,6 +1356,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/dollar_node_assigned_int.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot assign a value of type Node to variable \"x\" with specified type int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/dollar_node_assigned_int.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/match_no_branches.gd",
 					"line": 4,
 					"message": "Parse Error: Expected \":\" after \"match\" expression.",
@@ -1466,6 +1526,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/export_enum_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_category_illegal.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@export_category\" requires at least 1 arguments, but 0 were given.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_category_illegal.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2071,6 +2148,32 @@
 				}
 			],
 			"file": "res://fixtures/generated/export_placeholder_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/func_return_type_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot return a value of type \"String\" as \"int\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/func_return_type_mismatch.gd",
+					"line": 4,
+					"message": "Parse Error: Cannot return value of type \"String\" because the function return type is \"int\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/func_return_type_mismatch.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2692,7 +2795,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-03 19:41:25",
+	"generated_at": "2026-09-03 20:27:35",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2704,6 +2807,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 168,
-	"with_engine_logs": 147
+	"panel_item_count": 175,
+	"with_engine_logs": 152
 }

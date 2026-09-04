@@ -1,5 +1,5 @@
 {
-	"case_count": 160,
+	"case_count": 164,
 	"cases": [
 		{
 			"engine_logs": [
@@ -945,6 +945,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/typed_dict_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/tool_on_func.gd",
+					"line": 3,
+					"message": "Parse Error: Annotation \"@tool\" must be at the top of the script, before \"extends\" and \"class_name\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/tool_on_func.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1927,6 +1944,32 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/default_arg_type_mismatch.gd",
+					"line": 3,
+					"message": "Parse Error: Cannot assign a value of type \"String\" as \"int\".",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/default_arg_type_mismatch.gd",
+					"line": 3,
+					"message": "Parse Error: Cannot assign a value of type String to parameter \"a\" with specified type int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/default_arg_type_mismatch.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/export_node_path_illegal.gd",
 					"line": 3,
 					"message": "Parse Error: \"@export_node_path\" annotation requires a variable of type \"NodePath\" or \"Array[NodePath]\", but type \"int\" was given instead.",
@@ -2430,6 +2473,32 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/abstract_on_func.gd",
+					"line": 5,
+					"message": "Parse Error: An abstract function cannot have a body.",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/abstract_on_func.gd",
+					"line": 1,
+					"message": "Parse Error: Class \"-9223372003233233347.gd\" is not abstract but contains abstract methods. Mark the class as \"@abstract\" or remove \"@abstract\" from all methods in this class.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/abstract_on_func.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/invalid_ternary.gd",
 					"line": 4,
 					"message": "Parse Error: Expected expression as ternary condition after \"if\".",
@@ -2916,6 +2985,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_on_signal.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@export\" cannot be applied to a signal.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_on_signal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://static_check_sample.gd",
 					"line": 11,
 					"message": "Parse Error: Annotation \"@export\" does not precede a valid target, so it will have no effect.",
@@ -2931,7 +3017,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-04 00:10:35",
+	"generated_at": "2026-09-04 08:05:10",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -2943,6 +3029,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 183,
-	"with_engine_logs": 160
+	"panel_item_count": 189,
+	"with_engine_logs": 164
 }

@@ -98,14 +98,6 @@
 	},
 	"extra_error_related_classes": [
 		{
-			"class": "GDScriptNativeClass",
-			"methods": []
-		},
-		{
-			"class": "GDScriptSyntaxHighlighter",
-			"methods": []
-		},
-		{
 			"class": "GDScriptEditorTranslationParserPlugin",
 			"methods": [
 				"_parse_file"
@@ -113,6 +105,14 @@
 		},
 		{
 			"class": "GDScript",
+			"methods": []
+		},
+		{
+			"class": "GDScriptNativeClass",
+			"methods": []
+		},
+		{
+			"class": "GDScriptSyntaxHighlighter",
 			"methods": []
 		}
 	],

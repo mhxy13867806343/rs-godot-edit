@@ -1,5 +1,5 @@
 {
-	"case_count": 173,
+	"case_count": 178,
 	"cases": [
 		{
 			"engine_logs": [
@@ -561,6 +561,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_on_const.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@export\" cannot be applied to a constant.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_on_const.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/invalid_super.gd",
 					"line": 4,
 					"message": "Parse Error: Function \"definitely_not_a_method()\" not found in base Node.",
@@ -586,6 +603,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/duplicate_extends.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/bitwise_not_on_string.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operand of type \"String\" for unary operator \"~\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/bitwise_not_on_string.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -1978,6 +2012,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/export_on_inner_class.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@export\" cannot be applied to a class.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_on_inner_class.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/export_storage_illegal.gd",
 					"line": 4,
 					"message": "Parse Error: Annotation \"@export_storage\" cannot be applied to a function.",
@@ -2131,6 +2182,50 @@
 				}
 			],
 			"file": "res://fixtures/generated/annotation_onready_orphan.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/union_type_as_value.gd",
+					"line": 4,
+					"message": "Parse Error: Builtin type cannot be used as a name on its own.",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/union_type_as_value.gd",
+					"line": 4,
+					"message": "Parse Error: Identifier \"int\" not declared in the current scope.",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/union_type_as_value.gd",
+					"line": 4,
+					"message": "Parse Error: Builtin type cannot be used as a name on its own.",
+					"severity": "error",
+					"source": "godot"
+				},
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/union_type_as_value.gd",
+					"line": 4,
+					"message": "Parse Error: Identifier \"String\" not declared in the current scope.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/union_type_as_value.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2603,7 +2698,7 @@
 					"column": 1,
 					"file": "res://fixtures/generated/abstract_on_func.gd",
 					"line": 1,
-					"message": "Parse Error: Class \"-9223372002880911804.gd\" is not abstract but contains abstract methods. Mark the class as \"@abstract\" or remove \"@abstract\" from all methods in this class.",
+					"message": "Parse Error: Class \"-9223372002629253560.gd\" is not abstract but contains abstract methods. Mark the class as \"@abstract\" or remove \"@abstract\" from all methods in this class.",
 					"severity": "error",
 					"source": "godot"
 				}
@@ -3036,6 +3131,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/func_return_literal_type.gd",
+					"line": 3,
+					"message": "Parse Error: Expected return type or \"void\" after \"->\".",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/func_return_literal_type.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/extends_number.gd",
 					"line": 1,
 					"message": "Parse Error: Only strings or identifiers can be used after \"extends\", found \"int\" instead.",
@@ -3170,7 +3282,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-04 09:33:58",
+	"generated_at": "2026-09-04 10:20:38",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -3182,6 +3294,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 198,
-	"with_engine_logs": 173
+	"panel_item_count": 206,
+	"with_engine_logs": 178
 }

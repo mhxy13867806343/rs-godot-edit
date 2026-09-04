@@ -1,5 +1,5 @@
 {
-	"case_count": 164,
+	"case_count": 168,
 	"cases": [
 		{
 			"engine_logs": [
@@ -338,6 +338,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/export_flags_2d_render_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/export_on_enum.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@export\" cannot be applied to a enum.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/export_on_enum.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2166,6 +2183,23 @@
 				{
 					"code": "GODOT_SCRIPT",
 					"column": 1,
+					"file": "res://fixtures/generated/vector2_add_color.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator +, Vector2 and Color.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/vector2_add_color.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
 					"file": "res://fixtures/generated/export_global_file_illegal.gd",
 					"line": 3,
 					"message": "Parse Error: \"@export_global_file\" annotation requires a variable of type \"String\", \"Array[String]\", or \"PackedStringArray\", but type \"int\" was given instead.",
@@ -2174,6 +2208,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/export_global_file_illegal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/onready_on_func.gd",
+					"line": 4,
+					"message": "Parse Error: Annotation \"@onready\" cannot be applied to a function.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/onready_on_func.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -2484,7 +2535,7 @@
 					"column": 1,
 					"file": "res://fixtures/generated/abstract_on_func.gd",
 					"line": 1,
-					"message": "Parse Error: Class \"-9223372003233233347.gd\" is not abstract but contains abstract methods. Mark the class as \"@abstract\" or remove \"@abstract\" from all methods in this class.",
+					"message": "Parse Error: Class \"-9223372003082238400.gd\" is not abstract but contains abstract methods. Mark the class as \"@abstract\" or remove \"@abstract\" from all methods in this class.",
 					"severity": "error",
 					"source": "godot"
 				}
@@ -2524,6 +2575,23 @@
 				}
 			],
 			"file": "res://fixtures/generated/duplicate_signal.gd",
+			"language_errors": [],
+			"reload_error": 43,
+			"reload_error_text": "parse error"
+		},
+		{
+			"engine_logs": [
+				{
+					"code": "GODOT_SCRIPT",
+					"column": 1,
+					"file": "res://fixtures/generated/shift_on_string.gd",
+					"line": 4,
+					"message": "Parse Error: Invalid operands to operator <<, String and int.",
+					"severity": "error",
+					"source": "godot"
+				}
+			],
+			"file": "res://fixtures/generated/shift_on_string.gd",
 			"language_errors": [],
 			"reload_error": 43,
 			"reload_error_text": "parse error"
@@ -3017,7 +3085,7 @@
 	],
 	"empty_engine_logs": 0,
 	"empty_files": [],
-	"generated_at": "2026-09-04 08:05:10",
+	"generated_at": "2026-09-04 08:48:48",
 	"godot_version": {
 		"build": "official",
 		"hash": "89cea143987d564363e15d207438530651d943ac",
@@ -3029,6 +3097,6 @@
 		"string": "4.6-stable (official)",
 		"timestamp": 0
 	},
-	"panel_item_count": 189,
-	"with_engine_logs": 164
+	"panel_item_count": 193,
+	"with_engine_logs": 168
 }
